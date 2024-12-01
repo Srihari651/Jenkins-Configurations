@@ -1,12 +1,11 @@
 const axios = require("axios");
 
-const JENKINS_BASE_URL = "http://10.40.59.152:8080";
-const sourceJobPath =
-  "job/solvendo/job/opsengine/job/template/job/common-nodejs-template";
-const destinationFolderPath = "job/solvendo/job/opsengine/job/trash";
-const newJobName = "testSubject";
-const JENKINS_USER = "app-user";
-const JENKINS_API_TOKEN = "1126c4ab85d2018eace471a5ba78f46544";
+let JENKINS_BASE_URL
+let sourceJobPath
+let destinationFolderPath
+let newJobName
+let JENKINS_USER
+let JENKINS_API_TOKEN
 
 // Jenkins crumb endpoint
 const CRUMB_ENDPOINT = "/crumbIssuer/api/json";
