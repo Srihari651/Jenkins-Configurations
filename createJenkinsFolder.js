@@ -1,9 +1,5 @@
 const axios = require("axios")
 
-const JENKINS_BASE_URL = "http://10.40.59.152:8080";
-const JENKINS_USER = "app-user";
-const JENKINS_API_TOKEN = "1126c4ab85d2018eace471a5ba78f46544";
-
 const createJenkinsFolder = async (folderName) => {
     try {
       let crumb = await getJenkinsCrumb();
